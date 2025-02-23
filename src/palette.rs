@@ -135,6 +135,47 @@ impl Palette {
         // oklch(self.low_lightness, self.high_chroma, 330.0)
         oklch(0.877, 0.0595, 3.95)
     }
+
+    pub(crate) fn orange(&self) -> Oklch {
+        oklch(0.7467,  0.1308, 43.76)
+    }
+
+    pub(crate) fn teal(&self) -> Oklch {
+        oklch(0.8341, 0.0889, 175.67)
+    }
+
+    pub(crate) fn purple(&self) -> Oklch {
+        oklch(0.572, 0.084, 291.0)
+    }
+
+    pub(crate) fn black(&self) -> Oklch {
+        oklch(0.2898, 0.0083, 317.72)
+    }
+
+    pub(crate) fn one(&self) -> Oklch {
+        oklch(0.3554, 0.0109, 325.8)
+    }
+
+    pub(crate) fn two(&self) -> Oklch {
+        oklch(0.4181, 0.0134, 330.4)
+    }
+
+    pub(crate) fn four(&self) -> Oklch {
+        oklch(0.5374, 0.0128, 348.76)
+    }
+
+    pub(crate) fn six(&self) -> Oklch {
+        oklch(0.6497, 0.0132, 17.5)
+    }
+
+    pub(crate) fn eight(&self) -> Oklch {
+        oklch(0.7658, 0.0108, 48.58)
+    }
+
+    pub(crate) fn white(&self) -> Oklch {
+        oklch(0.9947, 0.0184, 113.33)
+    }
+
 }
 
 #[derive(Debug, Clone, Copy)]

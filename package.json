@@ -1,64 +1,30 @@
 {
-  "name": "Low Contrast",
-  "displayName": "Low Contrast",
-  "description": "A dark, low contrast theme based on [sema](https://github.com/lunacookies/sema)",
-  "publisher": "gronk-droid",
-  "license": "MIT",
-  "repository": {
-    "url": "https://github.com/gronk-droid/lowcontrast"
-  },
-  "version": "0.1.0",
-  "engines": {
-    "vscode": "^1.41.0"
-  },
-  "categories": [
-    "Themes"
-  ],
-  "scripts": {
-    "package": "vsce package"
-  },
-  "contributes": {
-    "themes": [
-      {
-        "label": "lc",
-        "uiTheme": "vs-dark",
-        "path": "./themes/lc-color-theme.json"
-      },
-      {
-        "label": "lc chroma",
-        "uiTheme": "vs-dark",
-        "path": "./themes/lc chroma-color-theme.json"
-      },
-      {
-        "label": "lc soft",
-        "uiTheme": "vs-dark",
-        "path": "./themes/lc soft-color-theme.json"
-      },
-      {
-        "label": "lc soft chroma",
-        "uiTheme": "vs-dark",
-        "path": "./themes/lc soft chroma-color-theme.json"
-      },
-      {
-        "label": "lc light",
-        "uiTheme": "vs",
-        "path": "./themes/lc light-color-theme.json"
-      },
-      {
-        "label": "lc light chroma",
-        "uiTheme": "vs",
-        "path": "./themes/lc light chroma-color-theme.json"
-      },
-      {
-        "label": "lc light soft",
-        "uiTheme": "vs",
-        "path": "./themes/lc light soft-color-theme.json"
-      },
-      {
-        "label": "lc light soft chroma",
-        "uiTheme": "vs",
-        "path": "./themes/lc light soft chroma-color-theme.json"
-      }
-    ]
+    "name": "Low Contrast",
+    "displayName": "Low Contrast",
+    "description": "A dark, low contrast theme based on [sema](https://github.com/lunacookies/sema).",
+    "publisher": "gronk-droid",
+    "license": "MIT",
+    "repository": {
+      "url": "https://github.com/gronk-droid/lowcontrast"
+    },
+    "version": "0.1.0",
+    "engines": {
+      "vscode": "^1.41.0"
+    },
+    "categories": [
+      "Themes"
+    ],
+    "scripts": {
+      "package": "vsce package"
+    },
+    "contributes": {
+      "themes": [
+        {
+          "label": "lc",
+          "uiTheme": "vs-dark",
+          "path": "./themes/lc-color-theme.json"
+        }
+      ]
+    }
   }
-}
+  

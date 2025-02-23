@@ -16,99 +16,114 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
             "editorInlayHint.parameterBackground",
             "editorInlayHint.typeBackground",
         ],
-        palette.base(BaseScale::Bg),
+        // palette.base(BaseScale::Bg),
+        palette.black(),
     );
     builder.add_workspace_rules(
         &["editor.foreground", "foreground"],
-        palette.base(BaseScale::Fg),
+        // palette.base(BaseScale::Fg),
+        palette.six(),
     );
 
     builder.add_workspace_rule(
         "editor.lineHighlightBackground",
-        palette.base(BaseScale::LightBg),
+        // palette.base(BaseScale::LightBg),
+        palette.one(),
     );
 
     builder.add_workspace_rule(
         "editor.selectionBackground",
-        palette.base(BaseScale::LighterBg),
+        // palette.base(BaseScale::LighterBg),
+        palette.two(),
     );
 
     builder.add_workspace_rules(
         &["editorCursor.foreground", "terminalCursor.foreground"],
-        palette.base(BaseScale::BrightFg),
+        // palette.base(BaseScale::BrightFg),
+        palette.white(),
     );
     builder.add_workspace_rules(
         &["editorCursor.background", "terminalCursor.background"],
-        palette.base(BaseScale::Bg),
+        // palette.base(BaseScale::Bg),
+        palette.black(),
     );
 
     builder.add_workspace_rules(
         &["activityBar.background", "sideBar.background"],
-        palette.base(BaseScale::Bg),
+        // palette.base(BaseScale::Bg),
+        palette.black(),
     );
-    builder.add_workspace_rule("activityBar.foreground", palette.base(BaseScale::BrightFg));
+    builder.add_workspace_rule("activityBar.foreground", palette.white());
     builder.add_workspace_rule(
         "activityBar.inactiveForeground",
-        palette.base(BaseScale::DarkFg),
+        // palette.base(BaseScale::DarkFg),
+        palette.four(),
     );
 
-    builder.add_workspace_rule("statusBar.foreground", palette.base(BaseScale::DarkFg));
+    builder.add_workspace_rule("statusBar.foreground", palette.four());
     builder.add_workspace_rules(
         &[
             "statusBar.background",
             "statusBar.debuggingBackground",
             "statusBar.noFolderBackground",
         ],
-        palette.base(BaseScale::Bg),
+        // palette.base(BaseScale::Bg),
+        palette.black(),
     );
 
     builder.add_workspace_rule(
         "editorLineNumber.foreground",
-        palette.base(BaseScale::DarkFg),
+        palette.four(),
     );
     builder.add_workspace_rule(
         "editorLineNumber.activeForeground",
-        palette.base(BaseScale::BrightFg),
+        palette.white(),
     );
 
-    builder.add_workspace_rule("editorWidget.background", palette.base(BaseScale::LightBg));
+    builder.add_workspace_rule("editorWidget.background", palette.one());
 
     builder.add_workspace_rule(
         "list.highlightForeground",
-        palette.base(BaseScale::BrightFg),
+        palette.white(),
     );
     builder.add_workspace_rules(
         &["list.focusBackground", "list.activeSelectionBackground"],
-        palette.base(BaseScale::LighterBg),
+        palette.two(),
     );
 
     builder.add_workspace_rules(
         &["editorGroupHeader.tabsBackground", "tab.inactiveBackground"],
-        palette.base(BaseScale::Bg),
+        // palette.base(BaseScale::Bg),
+        palette.black(),
     );
-    builder.add_workspace_rule("tab.activeBackground", palette.base(BaseScale::LightBg));
-    builder.add_workspace_rule("tab.inactiveForeground", palette.base(BaseScale::DimFg));
-    builder.add_workspace_rule("tab.activeForeground", palette.base(BaseScale::BrightFg));
+    builder.add_workspace_rule("tab.activeBackground", palette.one());
+    builder.add_workspace_rule("tab.inactiveForeground", palette.four());
+    builder.add_workspace_rule("tab.activeForeground", palette.white());
 
     builder.add_workspace_rules(
         &["titleBar.activeBackground", "titleBar.inactiveBackground"],
-        palette.base(BaseScale::Bg),
+        // palette.base(BaseScale::Bg),
+        palette.black(),
     );
-    builder.add_workspace_rule("titleBar.activeForeground", palette.base(BaseScale::Fg));
+    builder.add_workspace_rule(
+        "titleBar.activeForeground", 
+        // palette.base(BaseScale::Fg),
+        palette.six(),
+    );
     builder.add_workspace_rule(
         "titleBar.inactiveForeground",
-        palette.base(BaseScale::DarkFg),
+        palette.four(),
     );
 
-    builder.add_workspace_rule("breadcrumb.foreground", palette.base(BaseScale::DimFg));
+    builder.add_workspace_rule("breadcrumb.foreground", palette.four());
     builder.add_workspace_rule(
         "breadcrumb.focusForeground",
-        palette.base(BaseScale::BrightFg),
+        palette.white(),
     );
 
-    builder.add_workspace_rule("terminal.foreground", palette.base(BaseScale::Fg));
-    builder.add_workspace_rule("terminal.ansiBlack", palette.base(BaseScale::LightBg));
-    builder.add_workspace_rule("terminal.ansiBrightBlack", palette.base(BaseScale::DimFg));
+    builder.add_workspace_rule("terminal.foreground", palette.six());
+    builder.add_workspace_rule("terminal.ansiBlack", palette.one());
+    builder.add_workspace_rule("terminal.ansiBrightBlack", palette.four());
     builder.add_workspace_rule("terminal.ansiRed", palette.red());
     builder.add_workspace_rule("terminal.ansiBrightRed", palette.red());
     builder.add_workspace_rule("terminal.ansiGreen", palette.green());
@@ -121,13 +136,13 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
     builder.add_workspace_rule("terminal.ansiBrightMagenta", palette.pink());
     builder.add_workspace_rule("terminal.ansiCyan", palette.lavender());
     builder.add_workspace_rule("terminal.ansiBrightCyan", palette.lavender());
-    builder.add_workspace_rule("terminal.ansiWhite", palette.base(BaseScale::Fg));
+    builder.add_workspace_rule("terminal.ansiWhite", palette.six());
     builder.add_workspace_rule(
         "terminal.ansiBrightWhite",
-        palette.base(BaseScale::BrightFg),
+        palette.white(),
     );
 
-    builder.add_workspace_rule("focusBorder", palette.base(BaseScale::DarkFg));
+    builder.add_workspace_rule("focusBorder", palette.four());
 
     builder.add_workspace_rules(
         &[
@@ -136,7 +151,7 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
             "editorInlayHint.parameterForeground",
             "editorInlayHint.typeForeground",
         ],
-        palette.base(BaseScale::DimFg),
+        palette.four(),
     );
 }
 
@@ -150,16 +165,17 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
             Textmate("variable.language.this"),
             Textmate("keyword.type.go"),
         ],
-        palette.light_blue(),
+        // palette.light_blue(),
+        palette.red(),
     );
     builder.add_rules(
         &[Semantic("*.controlFlow"), Textmate("keyword.control")],
-        palette.blue(),
+        palette.orange(),
     );
 
     builder.add_rules(
         &[Semantic("function.trait"), Semantic("method.trait")],
-        palette.blue(),
+        palette.orange(),
     );
 
     builder.add_rules(
@@ -193,7 +209,7 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
             Textmate("entity.name.type.interface"),
             Textmate("entity.name.type.type-parameter"),
         ],
-        palette.blue(),
+        palette.orange(),
     );
 
     builder.add_rules(
@@ -270,7 +286,7 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
 
     builder.add_rules(
         &[Semantic("comment"), Textmate("comment")],
-        (palette.base(BaseScale::BrightFg), FontStyle::Italic),
+        (palette.white(), FontStyle::Italic),
     );
 
     builder.add_rules(
@@ -280,7 +296,7 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
             Textmate("comment.block.documentation"),
             Textmate("comment.block.javadoc"),
         ],
-        palette.base(BaseScale::BrightFg),
+        palette.white(),
     );
 
     builder.add_rules(
@@ -290,21 +306,21 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
             Textmate("storage.type.annotation"),
             Textmate("punctuation.definition.annotation"),
         ],
-        palette.base(BaseScale::DimFg),
+        palette.four(),
     );
 
-    builder.add_rule(Textmate("keyword.operator"), palette.base(BaseScale::Fg));
+    builder.add_rule(Textmate("keyword.operator"), palette.six());
 
     builder.add_rule(Semantic("unresolvedReference"), palette.red());
 
     builder.add_rule(Textmate("markup.deleted"), palette.red());
     builder.add_rule(Textmate("markup.inserted"), palette.green());
-    builder.add_rule(Textmate("markup.changed"), palette.blue());
-    builder.add_rule(Textmate("meta.diff"), palette.base(BaseScale::DarkFg));
+    builder.add_rule(Textmate("markup.changed"), palette.orange());
+    builder.add_rule(Textmate("meta.diff"), palette.four());
 
     builder.add_rule(
         Textmate("comment.line.number-sign.git-commit"),
-        palette.base(BaseScale::DimFg),
+        palette.four(),
     );
     builder.add_rule(
         Textmate("invalid.deprecated.line-too-long.git-commit"),
@@ -324,8 +340,8 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
     );
     builder.add_rule(Semantic("magit-tag-name"), palette.magenta());
     builder.add_rule(Textmate("magit.entity"), palette.green());
-    builder.add_rule(Textmate("magit.header"), palette.light_blue());
-    builder.add_rule(Textmate("magit.subheader"), palette.blue());
+    builder.add_rule(Textmate("magit.header"), palette.red());
+    builder.add_rule(Textmate("magit.subheader"), palette.orange());
 
     builder.add_rule(Semantic("*.unsafe"), (palette.red(), FontStyle::Bold));
     builder.add_rule(Semantic("*.mutable"), FontStyle::Underline);
