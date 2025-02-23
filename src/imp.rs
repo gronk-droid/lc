@@ -142,7 +142,7 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
         palette.white(),
     );
 
-    builder.add_workspace_rule("focusBorder", palette.four());
+    builder.add_workspace_rule("focusBorder", palette.black());
 
     builder.add_workspace_rules(
         &[
@@ -286,7 +286,7 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
 
     builder.add_rules(
         &[Semantic("comment"), Textmate("comment")],
-        (palette.white(), FontStyle::Italic),
+        (palette.eight(), FontStyle::Italic),
     );
 
     builder.add_rules(
@@ -296,7 +296,7 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
             Textmate("comment.block.documentation"),
             Textmate("comment.block.javadoc"),
         ],
-        palette.white(),
+        palette.eight(),
     );
 
     builder.add_rules(
