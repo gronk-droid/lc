@@ -1,6 +1,6 @@
 [package]
 authors = ["Grant Butler <gronk.droid@gmail.com>"]
-edition = "2025"
+edition = "2018"
 name = "lowcontrast"
 version = "0.2.0"
 
