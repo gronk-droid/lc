@@ -1,8 +1,8 @@
 [package]
-authors = ["Aramis Razzaghipour <aramisnoah@gmail.com>"]
-edition = "2018"
-name = "sema"
-version = "0.1.0"
+authors = ["Grant Butler <gronk.droid@gmail.com>"]
+edition = "2025"
+name = "lowcontrast"
+version = "0.2.0"
 
 [dependencies]
 mottle = "0.2.0"
