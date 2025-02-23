@@ -5,30 +5,30 @@ use mottle::theme::{ThemeBuilder, Type};
 use std::io;
 
 fn main() -> io::Result<()> {
-    build_theme(&palette::Palette::default(), Type::Dark, "sema")?;
-    build_theme(&palette::Palette::chroma(), Type::Dark, "sema chroma")?;
-    build_theme(&palette::Palette::soft(), Type::Dark, "sema soft")?;
+    build_theme(&palette::Palette::default(), Type::Dark, "lc")?;
+    build_theme(&palette::Palette::chroma(), Type::Dark, "lc chroma")?;
+    build_theme(&palette::Palette::soft(), Type::Dark, "lc soft")?;
     build_theme(
         &palette::Palette::soft_chroma(),
         Type::Dark,
-        "sema soft chroma",
+        "lc soft chroma",
     )?;
 
-    build_theme(&palette::Palette::light(), Type::Light, "sema light")?;
+    build_theme(&palette::Palette::light(), Type::Light, "lc light")?;
     build_theme(
         &palette::Palette::light_chroma(),
         Type::Light,
-        "sema light chroma",
+        "lc light chroma",
     )?;
     build_theme(
         &palette::Palette::light_soft(),
         Type::Light,
-        "sema light soft",
+        "lc light soft",
     )?;
     build_theme(
         &palette::Palette::light_soft_chroma(),
         Type::Light,
-        "sema light soft chroma",
+        "lc light soft chroma",
     )?;
 
     Ok(())

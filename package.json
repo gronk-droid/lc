@@ -1,13 +1,13 @@
 {
-  "name": "sema",
-  "displayName": "sema",
-  "description": "A theme that focuses on what’s important",
-  "publisher": "arzg",
+  "name": "Low Contrast",
+  "displayName": "Low Contrast",
+  "description": "A dark, low contrast theme based on [sema](https://github.com/lunacookies/sema)",
+  "publisher": "gronk-droid",
   "license": "MIT",
   "repository": {
-    "url": "https://github.com/arzg/sema"
+    "url": "https://github.com/gronk-droid/lowcontrast"
   },
-  "version": "1.12.1",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.41.0"
   },
@@ -20,44 +20,44 @@
   "contributes": {
     "themes": [
       {
-        "label": "sema",
+        "label": "lc",
         "uiTheme": "vs-dark",
-        "path": "./themes/sema-color-theme.json"
+        "path": "./themes/lc-color-theme.json"
       },
       {
-        "label": "sema chroma",
+        "label": "lc chroma",
         "uiTheme": "vs-dark",
-        "path": "./themes/sema chroma-color-theme.json"
+        "path": "./themes/lc chroma-color-theme.json"
       },
       {
-        "label": "sema soft",
+        "label": "lc soft",
         "uiTheme": "vs-dark",
-        "path": "./themes/sema soft-color-theme.json"
+        "path": "./themes/lc soft-color-theme.json"
       },
       {
-        "label": "sema soft chroma",
+        "label": "lc soft chroma",
         "uiTheme": "vs-dark",
-        "path": "./themes/sema soft chroma-color-theme.json"
+        "path": "./themes/lc soft chroma-color-theme.json"
       },
       {
-        "label": "sema light",
+        "label": "lc light",
         "uiTheme": "vs",
-        "path": "./themes/sema light-color-theme.json"
+        "path": "./themes/lc light-color-theme.json"
       },
       {
-        "label": "sema light chroma",
+        "label": "lc light chroma",
         "uiTheme": "vs",
-        "path": "./themes/sema light chroma-color-theme.json"
+        "path": "./themes/lc light chroma-color-theme.json"
       },
       {
-        "label": "sema light soft",
+        "label": "lc light soft",
         "uiTheme": "vs",
-        "path": "./themes/sema light soft-color-theme.json"
+        "path": "./themes/lc light soft-color-theme.json"
       },
       {
-        "label": "sema light soft chroma",
+        "label": "lc light soft chroma",
         "uiTheme": "vs",
-        "path": "./themes/sema light soft chroma-color-theme.json"
+        "path": "./themes/lc light soft chroma-color-theme.json"
       }
     ]
   }
