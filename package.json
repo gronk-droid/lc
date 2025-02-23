@@ -1,13 +1,13 @@
 {
     "name": "lowcontrast",
     "displayName": "Low Contrast",
-    "description": "A dark, low contrast theme based on [sema](https://github.com/lunacookies/sema).",
+    "description": "A dark, low contrast theme.",
     "publisher": "gronk-droid",
     "license": "MIT",
     "repository": {
       "url": "https://github.com/gronk-droid/lowcontrast"
     },
-    "version": "0.2.3",
+    "version": "0.2.4",
     "engines": {
       "vscode": "^1.41.0"
     },
