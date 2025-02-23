@@ -57,7 +57,7 @@
 		"terminal.ansiBrightCyan": "#BAB7CB",
 		"terminal.ansiWhite": "#978C8C",
 		"terminal.ansiBrightWhite": "#FDFFF1",
-		"focusBorder": "#746B6F",
+		"focusBorder": "#2D2A2E",
 		"rust_analyzer.inlayHints.foreground": "#746B6F",
 		"editorInlayHint.foreground": "#746B6F",
 		"editorInlayHint.parameterForeground": "#746B6F",
@@ -174,11 +174,11 @@
 			"fontStyle": ""
 		},
 		"comment": {
-			"foreground": "#FDFFF1",
+			"foreground": "#B9B1AD",
 			"italic": true
 		},
 		"comment.documentation": {
-			"foreground": "#FDFFF1",
+			"foreground": "#B9B1AD",
 			"fontStyle": ""
 		},
 		"*.attribute": {
@@ -493,28 +493,28 @@
 		{
 			"scope": "comment",
 			"settings": {
-				"foreground": "#FDFFF1",
+				"foreground": "#B9B1AD",
 				"fontStyle": "italic"
 			}
 		},
 		{
 			"scope": "comment.line.documentation",
 			"settings": {
-				"foreground": "#FDFFF1",
+				"foreground": "#B9B1AD",
 				"fontStyle": ""
 			}
 		},
 		{
 			"scope": "comment.block.documentation",
 			"settings": {
-				"foreground": "#FDFFF1",
+				"foreground": "#B9B1AD",
 				"fontStyle": ""
 			}
 		},
 		{
 			"scope": "comment.block.javadoc",
 			"settings": {
-				"foreground": "#FDFFF1",
+				"foreground": "#B9B1AD",
 				"fontStyle": ""
 			}
 		},
