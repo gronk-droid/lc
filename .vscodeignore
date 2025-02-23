@@ -1,0 +1,7 @@
+src/
+Cargo.toml
+Cargo.lock
+.gitignore
+package.json.old
+tmp.txt
+.github/
