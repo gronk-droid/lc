@@ -1,5 +1,3 @@
-# spotify_app.py
-
 from flask import Flask, jsonify, request
 import requests
 import os
